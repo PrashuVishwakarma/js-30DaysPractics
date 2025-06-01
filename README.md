@@ -42,3 +42,22 @@ Each day focuses on a core concept of JavaScript. By the end of 30 days, you’l
 | 28  | Local Storage |
 | 29  | Mini Project 1 |
 | 30  | Mini Project 2 |
+-----------------------------
+
+## ⚙️ Setup Instructions
+
+### 1. 🖥️ Install VS Code (or any code editor)
+- [Download VS Code](https://code.visualstudio.com/)
+
+### 2. 🔧 Install Node.js (to run JS in the terminal)
+- [Download Node.js](https://nodejs.org/)
+- After install, check it using:
+  ```bash
+  node -v
+  npm -v
+
+# 📘 JavaScript Notes – Day 01
+
+- Installed VS Code and Node.js
+- Ran first `console.log` in terminal
+- Example: console.log("Hello, JavaScript World") 
