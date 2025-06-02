@@ -60,4 +60,4 @@ Each day focuses on a core concept of JavaScript. By the end of 30 days, you’l
 
 - Installed VS Code and Node.js
 - Ran first `console.log` in terminal
-- Example: console.log("Hello, JavaScript World") 
+- Example: console.log("Hello, JavaScript World")
