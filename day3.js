@@ -21,3 +21,20 @@ let b = 5
 // Assign the value a + b to c
 let c = a + b;
 console.log(c);
+
+let user = "Rahul";
+let lastName = "Sharma";
+console.log(user + " "+ lastName);
+
+// If you add a number and a string, the result will be a string.
+
+let x = 5;
+let y = "6";
+let result = x+y;
+console.log(result);
+
+let v = 10;
+let w = 50;
+console.log(v==w);
+console.log(v<w && v>w);
+console.log(v<w || v>w);
