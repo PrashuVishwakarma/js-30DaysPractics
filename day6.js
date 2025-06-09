@@ -32,7 +32,9 @@ let addNum = function num(x,y){
 }
 console.log(addNum(2,2))
 
-//Arrow Functions
+//Arrow Functions Parameters
 const add = (a, b) => a + b;
-
 console.log(add(5, 3));
+//Arrow Functions No Parameters
+const greet = () => console.log("Hello, Prashu")
+greet();
