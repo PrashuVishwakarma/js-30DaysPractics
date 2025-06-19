@@ -1,0 +1,54 @@
+<!-- DOM in JavaScript : DOM stand for Document object Model
+
+It is a programming interface for web documents. When a web page is loaded, the browser creates a DOM of the page, which represents the HTML elements as a tree-like structure that JavaScript can interact with.
+
+Document
+ └── html
+     └── body
+         ├── h1
+         └── p
+
+         Basic DOM Method
+         1  document.getElementById()
+         2  document.getElementsByClassName()
+         3  document.getElementsByTagName()
+         4  document.querySelector()
+         5  document.querySelectorAll() -->
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <h1 id="text">Hello</h1>
+    <button onclick="changeText()">click me</button>
+
+    <h2 id="style">change style</h2>
+    <button onclick="changeColor()">change color</button>
+
+    <div id="container"></div>
+    <button onclick="addElements()">add paragarph</button>
+
+    <script>
+        //Change text
+        function changeText(){
+            document.getElementById("text").innerText = "I am Change Hello";
+        }
+        //Change style
+        function changeColor(){
+            document.getElementById("style").style.color = "red";
+        }
+        //Create new elements
+        function addElements(){
+            let para = document.createElement('p');
+            para.innerText = "I am adding new Paragraph";
+            document.getElementById("container").appendChild(para);
+        }
+    </script>
+ </body>
+ </html>
+
