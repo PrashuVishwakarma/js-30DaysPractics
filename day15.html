@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <p id="para">Hello JavaScript</p>
+    <div id="container"></div>
+
+    <!-- Access the elements -->
+
+    <script>
+        const newPara = document.getElementById("para");
+        console.log(newPara.innerText);  //Hello
+
+// Change text 
+        document.getElementById("para").innerText = "I am new JavaScript Text"
+
+// Change html element
+        document.getElementById("container").innerHTML = "<p>I am New container <p>"
+    </script>
+</body>
+</html>
