@@ -9,6 +9,10 @@
     <p id="para">Hello JavaScript</p>
     <div id="container"></div>
 
+    <h2 id="head">Wellcome Page</h2>
+
+    <h3 id="box" class="redbox"></h3>
+
     <!-- Access the elements -->
 
     <script>
@@ -20,6 +24,16 @@
 
 // Change html element
         document.getElementById("container").innerHTML = "<p>I am New container <p>"
+
+// Change style 
+        document.getElementById("head").style.color = 'Red';
+
+        //Add class , remove class
+
+       const box = document.getElementsById("box");
+       box.classList.add("new-class"); //add class
+       box.classList.remove("redbox");  //remove class
+
     </script>
 </body>
 </html>
