@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM Manipulation</title>
-</head>
-<body>
+  </head>
+  <body>
     <p id="para">Hello JavaScript</p>
     <div id="container"></div>
 
@@ -13,27 +13,35 @@
 
     <h3 id="box" class="redbox"></h3>
 
+    <button onclick="writeText()">Add HTML</button>
+
     <!-- Access the elements -->
 
     <script>
-        const newPara = document.getElementById("para");
-        console.log(newPara.innerText);  //Hello
+      const newPara = document.getElementById("para");
+      console.log(newPara.innerText); //Hello
 
-// Change text 
-        document.getElementById("para").innerText = "I am new JavaScript Text"
+      // Change text
+      document.getElementById("para").innerText = "I am new JavaScript Text";
 
-// Change html element
-        document.getElementById("container").innerHTML = "<p>I am New container <p>"
+      // Change html element
+      document.getElementById("container").innerHTML =
+        "<p>I am New container <p>";
 
-// Change style 
-        document.getElementById("head").style.color = 'Red';
+      // Change style
+      document.getElementById("head").style.color = "Red";
 
-        //Add class , remove class
+      //Add class , remove class
 
-       const box = document.getElementsById("box");
-       box.classList.add("new-class"); //add class
-       box.classList.remove("redbox");  //remove class
+      const box = document.getElementsById("box");
+      box.classList.add("new-class"); //add class
+      box.classList.remove("redbox"); //remove class
 
+      function writeText() {
+        document.write(
+          "<p>Hello Users, Text is written using the document.write() method. </p>"
+        );
+      }
     </script>
-</body>
+  </body>
 </html>
