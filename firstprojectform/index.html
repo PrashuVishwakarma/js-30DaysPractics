@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Admission Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f8ff;
+      margin: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    form {
+      max-width: 700px;
+      margin: auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    fieldset {
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    legend {
+      font-weight: bold;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .radio-group, .checkbox-group {
+      display: flex;
+      gap: 15px;
+      margin-top: 5px;
+    }
+    .form-buttons {
+      text-align: center;
+    }
+    .form-buttons button {
+      padding: 10px 20px;
+      margin: 10px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .form-buttons button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Student Admission Form</h1>
+
+  <form>
+    <!-- Personal Information -->
+    <fieldset>
+      <legend>Personal Details</legend>
+      
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" name="fullName" required>
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label>Gender</label>
+      <div class="radio-group">
+        <label><input type="radio" name="gender" value="male" required> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+        <label><input type="radio" name="gender" value="other"> Other</label>
+      </div>
+      
+      <label for="photo">Upload Passport Size Photo</label>
+      <input type="file" id="photo" name="photo" accept="image/*" required>
+    </fieldset>
+
+    <!-- Contact Information -->
+    <fieldset>
+      <legend>Contact Information</legend>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Mobile Number</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+      <label for="address">Full Address</label>
+      <textarea id="address" name="address" rows="4" required></textarea>
+    </fieldset>
+
+    <!-- Educational Details -->
+    <fieldset>
+      <legend>Educational Information</legend>
+
+      <label for="course">Select Course</label>
+      <select id="course" name="course" required>
+        <option value="">--Select--</option>
+        <option value="btech">B.Tech</option>
+        <option value="bsc">B.Sc</option>
+        <option value="bca">BCA</option>
+        <option value="mba">MBA</option>
+      </select>
+
+      <label for="percentage">Last Qualification Percentage (%)</label>
+      <input type="number" id="percentage" name="percentage" min="0" max="100" required>
+
+      <label for="year">Passing Year</label>
+      <input type="number" id="year" name="year" min="2000" max="2025" required>
+    </fieldset>
+
+    <!-- Extra Info -->
+    <fieldset>
+      <legend>Other Details</legend>
+
+      <label>Hobbies (select at least one)</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="hobbies" value="reading"> Reading</label>
+        <label><input type="checkbox" name="hobbies" value="sports"> Sports</label>
+        <label><input type="checkbox" name="hobbies" value="coding"> Coding</label>
+        <label><input type="checkbox" name="hobbies" value="music"> Music</label>
+      </div>
+
+      <label for="statement">Why do you want to join this course?</label>
+      <textarea id="statement" name="statement" rows="3"></textarea>
+    </fieldset>
+
+    <!-- Consent -->
+    <fieldset>
+      <legend>Declaration</legend>
+      <label>
+        <input type="checkbox" name="consent" required>
+        I hereby declare that the information provided above is true to the best of my knowledge.
+      </label>
+    </fieldset>
+
+    <!-- Submit Buttons -->
+    <div class="form-buttons">
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </div>
+  </form>
+
+</body>
+</html>
